@@ -5,4 +5,6 @@
 
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 
+<img src="https://github.com/SoftwareEngNoobs/HW1-CSC510/actions/workflows/python-app.yml/badge.svg" />
+
 Welcome to our Repository :)
