@@ -28,10 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest coverage
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Run two tests on testfile
-      run: |
-        python myfile_test.py
-    - name: Run tests with coverage
+     - name: Run tests with coverage
       run: |
         coverage run -m pytest
         coverage report
@@ -44,3 +41,7 @@ jobs:
         name: coverage-report
         path: htmlcov/
     
+    - name: Run two tests on testfile
+      run: |
+        python myfile_test.py
+   
