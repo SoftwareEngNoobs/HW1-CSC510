@@ -22,7 +22,7 @@ jobs:
     - name: Set up Python 3.13
       uses: actions/setup-python@v3
       with:
-        python-version: "3.13"
+        python-version: "3.13.0-rc.1"
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
