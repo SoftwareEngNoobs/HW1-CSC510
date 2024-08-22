@@ -1,10 +1,12 @@
 from datetime import datetime
 
-for i in range(10):
-    print(":)")
-print("Date right now:",datetime.today())
-a=154
-for i in range(a):
-    a+=a**a
-    a+="add
-    print("Aval:",a)
+def square_sum(a):
+
+    print("Date today:",datetime.today())
+
+    for _ in range(a):
+        a+=a**2
+        print(a)
+    return a
+
+print(square_sum(2))
