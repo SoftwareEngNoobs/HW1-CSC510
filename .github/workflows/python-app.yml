@@ -28,7 +28,7 @@ jobs:
         python myfile_test.py
     - name: Run tests with coverage
       run: |
-        coverage run -m pytest
+        python -m coverage run pytest
         coverage report
     - name: Generate coverage report
       run: |
