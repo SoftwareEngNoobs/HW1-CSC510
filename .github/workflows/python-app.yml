@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest coverage
+        pip install pytest coverage coverage-badge
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run tests with coverage
       run: |
@@ -38,7 +38,9 @@ jobs:
       with:
         name: coverage-report
         path: htmlcov/
-    
+    - name: Running CoverageBadge
+      run: |
+        coverage-badge -o coverage.svg
     - name: Run two tests on testfile
       run: |
         python myfile_test.py
