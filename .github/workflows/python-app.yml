@@ -24,20 +24,12 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest coverage coverage-badge
+        pip install pytest coverage coverage-badge pytest-cov
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Run tests with coverage
+    - name: Run tests with coverage report 
       run: |
-        coverage run -m pytest 
-        coverage report
-    - name: Generate coverage report
-      run: |
-        coverage html
-    - name: Upload coverage report
-      uses: actions/upload-artifact@v3
-      with:
-        name: coverage-report
-        path: htmlcov/
+        pytest --cov=. --cov-report=json:coverage.json --continue-on-collection-errors
+       
     - name: Running CoverageBadge
       run: |
         coverage-badge -o coverage.svg
