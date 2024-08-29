@@ -29,7 +29,11 @@ jobs:
     - name: Run tests with coverage report 
       run: |
         pytest --cov=. --cov-report=json:coverage.json --continue-on-collection-errors
-       
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: coverage.json
     - name: Running CoverageBadge
       run: |
         coverage-badge -o coverage.svg
