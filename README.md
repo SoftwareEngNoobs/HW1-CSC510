@@ -1,10 +1,8 @@
 # HW1-CSC510
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Language-Python-yellow" /> 
+<img src="https://img.shields.io/badge/Platform-Linux-blue" />
+<img src="https://github.com/SoftwareEngNoobs/HW1-CSC510/actions/workflows/python-app.yml/badge.svg" /> 
+<img src="https://img.shields.io/badge/License-MIT-green.svg" href="https://opensource.org/licenses/MIT" />
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-
-<img src="https://github.com/SoftwareEngNoobs/HW1-CSC510/actions/workflows/python-app.yml/badge.svg" />
-
-Welcome to our Repository :)
+### Welcome to our Repository :)
